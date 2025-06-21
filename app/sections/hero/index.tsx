@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils'
 import BlurPopUp from '@/components/blur-pop-up'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
-import Inbox from '@/assets/inbox.svg'
+import Image from 'next/image'
 import Sidebar from './components/sidebar'
 import IllustrateAnimate from '@/components/illustrate-animate'
 
@@ -15,35 +15,42 @@ const Hero: FC = () => {
 		<section className={styles.hero}>
 			<LayoutWrapper>
 				<h1 className={cn(styles.heading, styles.hide__mobile)}>
-					<BlurPopUpByWord text='Linear is a purpose-built tool for planning and building products' />
+					<BlurPopUpByWord text='Mulai Bisnismu dalam Hitungan Menit bersama Bisnovo' />
 				</h1>
 
 				<h1 className={cn(styles.heading, styles.show__mobile, 'text-center')}>
-					<BlurPopUpByWord text='Plan and build your product' />
+					<BlurPopUpByWord text='Setup Cepat. Jualan Online Lebih Mudah.' />
 				</h1>
 
 				<BlurPopUp delay={1}>
 					<h2 className={cn(styles.sub__heading, styles.hide__mobile)}>
-						Meet the system for modern software development. Streamline issues,
-						projects, and product roadmaps.
+						Kami bantu kamu membuat website, konten, chatbot, dan strategi promosi.
+						Juga tersedia program reseller tanpa modal dengan untung langsung.
 					</h2>
 					<h2 className={cn(styles.sub__heading, styles.show__mobile)}>
-						Linear is a purpose-built tool for modern product development.
-						Streamline issues, projects, and product roadmaps.
+						Paket lengkap untuk mulai jualan online + peluang jadi reseller gratis.
 					</h2>
 				</BlurPopUp>
 
 				<div className={cn(styles.button__container)}>
 					<BlurPopUp delay={1.1}>
-						<Link className={styles.start__link} href='#'>
+						<Link
+							className={styles.start__link}
+							href='https://wa.me/6285156779923'
+							target='_blank'
+							rel='noopener noreferrer'>
 							{' '}
-							Start building{' '}
+							Konsultasi Gratis di WhatsApp{' '}
 						</Link>
 					</BlurPopUp>
 
 					<BlurPopUp delay={1.15}>
-						<Link className={styles.intoducing__link} href='#'>
-							<span>Introducing Initiatives</span>
+						<Link
+							className={styles.intoducing__link}
+							href='https://wa.me/6285156779923'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<span>Gabung Jadi Reseller</span>
 							<ChevronRight />
 						</Link>
 					</BlurPopUp>
@@ -60,7 +67,13 @@ const Hero: FC = () => {
 									delay={2}
 									duration={1.4}
 									className={styles.hero__illustration__inbox}>
-									<Inbox />
+									<Image
+										src="/assets/angkabrpsaja.jpg"
+										alt="Illustration"
+										width={500}
+										height={300}
+										className={styles.hero__illustration__image}
+									/>
 								</IllustrateAnimate>
 							</div>
 						</div>
