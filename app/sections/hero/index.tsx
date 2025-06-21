@@ -68,7 +68,7 @@ const Hero: FC = () => {
 									duration={1.4}
 									className={styles.hero__illustration__inbox}>
 									<Image
-										src="/assets/angkabrpsaja.jpg"
+										src="/assets/angkabrpsaja.png"
 										alt="Illustration"
 										width={500}
 										height={300}
